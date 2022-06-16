@@ -20,5 +20,15 @@ public class Facebook {
 		txtPassword.sendKeys("123456789!");
 		String text2 = txtPassword.getAttribute("value");
 		System.out.println(text2);
+		
+		WebElement txtUsername1 = driver.findElement(By.xpath("//input[@type='text']"));
+		txtUsername.sendKeys("somasundaram@gamil.com");
+		String text1 = txtUsername.getAttribute("value");
+		System.out.println(text);
+		
+		WebElement txtPassword1 = driver.findElement(By.xpath("//input[@type='password']"));
+		txtPassword.sendKeys("123456789!");
+		String text3 = txtPassword.getAttribute("value");
+		System.out.println(text2);
 	}
 }
